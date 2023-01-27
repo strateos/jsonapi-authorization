@@ -19,9 +19,9 @@ end
 
 case jsonapi_resources_version
 when 'master'
-  gem 'jsonapi-resources', git: 'https://github.com/cerebris/jsonapi-resources.git'
+  gem 'jsonapi-resources', :git => 'https://github.com/strateos/jsonapi-resources.git', branch: 'upgrade_to_0_8_4'
 when 'default'
-  gem 'jsonapi-resources', '0.8.0.beta1'
+  gem 'jsonapi-resources', :git => 'https://github.com/strateos/jsonapi-resources.git', branch: 'upgrade_to_0_8_4'
 else
   gem 'jsonapi-resources', jsonapi_resources_version
 end
